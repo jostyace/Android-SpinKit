@@ -1,15 +1,19 @@
+
 # Android-SpinKit
->Android loading animations(I wrote a android edition according [SpinKit](https://tobiasahlin.com/spinkit))
+ 
+> Android 加载动画([SpinKit](https://tobiasahlin.com/spinkit)的Android版本实现)
 
 [Demo Apk](https://raw.githubusercontent.com/ybq/AndroidSpinKit/master/art/spinkit.apk)
 
-## Preview
+## 效果
 
 <img src="https://raw.githubusercontent.com/ybq/AndroidSpinKit/master/art/screen.gif" width="240px" height="240px"/>
+ 
 
 <img src="https://raw.githubusercontent.com/ybq/AndroidSpinKit/master/art/screen2.gif" width="200px" height="200px"/>
 
-## Gradle Dependency
+## Gradle 依赖
+
 
  ``` gradle
 dependencies {
@@ -18,7 +22,7 @@ dependencies {
  ```
 
 
-## Usage
+## 使用
 - Xml
 
  ```xml
@@ -30,27 +34,20 @@ dependencies {
      android:layout_height="wrap_content"
      android:layout_gravity="center"
      app:SpinKit_Color="@color/colorAccent" />         
-```
+ ```
+ 
  
 - ProgressBar
 
  ```java
 ProgressBar progressBar = (ProgressBar)findViewById(R.id.progress);
-Sprite doubleBounce = new DoubleBounce();
+DoubleBounce doubleBounce = new DoubleBounce();
 progressBar.setIndeterminateDrawable(doubleBounce);
 ```
 
-## Style
-> 
- ```xml
-@style/SpinKitView
-@style/SpinKitView.Circle
-@style/SpinKitView.Large
-@style/SpinKitView.Small
-@style/SpinKitView.Small.DoubleBounce   
- ```
+###样式:
 
-Style | Preview
+样式 | 预览
 ------------     |   -------------
 RotatingPlane    | <img src='https://raw.githubusercontent.com/ybq/AndroidSpinKit/master/art/RotatingPlane.gif' alt='RotatingPlane' width="90px" height="90px"/>
 DoubleBounce     | <img src='https://raw.githubusercontent.com/ybq/AndroidSpinKit/master/art/DoubleBounce.gif' alt='DoubleBounce' width="90px" height="90px"/>
@@ -71,7 +68,7 @@ RotatingCircle   | <img src='https://raw.githubusercontent.com/ybq/AndroidSpinKi
 
 
 
-## Acknowledgements
+##感谢
 - [SpinKit](https://github.com/tobiasahlin/SpinKit).
 
 
